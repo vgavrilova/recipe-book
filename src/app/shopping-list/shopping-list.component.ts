@@ -11,4 +11,12 @@ export class ShoppingListComponent {
     new Ingredient('Marcarpone', 500, 'g'),
     new Ingredient('Sugar', 100, 'g'),
   ];
+
+  addIngredient(ingr: Ingredient) {
+    this.ingredients.push(ingr);
+  }
+
+  removeIngredient(index: number) {
+    this.ingredients.splice(index, 1);
+  }
 }
